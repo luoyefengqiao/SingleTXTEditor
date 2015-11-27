@@ -21,7 +21,7 @@ public class MySaveFileListener implements ActionListener{
 	private JTabbedPane tabbedPane;
 	private List<MyTextFrame> myTextFrames;
 	private JFileChooser fileChooser_save;
-	private File file;
+	private File file=null;
 	
 	public MySaveFileListener(JComponent component,JTabbedPane tabbedPane,List<MyTextFrame> myTextFrames) {
 		this.component=component;
@@ -38,6 +38,7 @@ public class MySaveFileListener implements ActionListener{
 		
 		fileChooser_save.showSaveDialog(component);
 		
+
 		file=fileChooser_save.getSelectedFile();
 		
 		file=FileCheckUtil.CheckSaveFile(file);
@@ -45,7 +46,7 @@ public class MySaveFileListener implements ActionListener{
 		if (file!=null&&!file.exists()) {
 			new Thread(new TXTSaveMethod(file, myTextFrames.get(tabbedPane.getSelectedIndex()).getTextPane())).start();
 		}
-		if(file.exists()){
+		if(file!=null&&file.exists()){
 			JOptionPane.showMessageDialog(component, "保存失败！文件已存在！");
 		}
 		
