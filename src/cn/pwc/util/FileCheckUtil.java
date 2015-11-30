@@ -2,9 +2,17 @@ package cn.pwc.util;
 
 import java.io.File;
 
+/**
+ * 文件名校验方法
+ * @author luoyefengqiao
+ *
+ */
+
 public class FileCheckUtil {
 	
-	
+	/*
+	 * 打开的文件后缀校验
+	 */
 	public static File CheckOpenFile(File file){
 		String checkString;
 		
@@ -20,6 +28,10 @@ public class FileCheckUtil {
 		
 		return file;
 	}
+	
+	/*
+	 * 保存的文件后缀校验，自动加上.txt
+	 */
 	public static File CheckSaveFile(File file){
 		String checkString;
 		

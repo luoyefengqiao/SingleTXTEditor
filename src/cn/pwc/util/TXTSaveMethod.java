@@ -8,6 +8,13 @@ import java.io.OutputStreamWriter;
 
 import javax.swing.JTextPane;
 
+
+/**
+ * TXT输出流方法类
+ * 继承Runnable接口允许后台线程执行方法
+ * @author luoyefengqiao
+ *
+ */
 public class TXTSaveMethod implements Runnable{
 
 	private JTextPane textPane;

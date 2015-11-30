@@ -14,6 +14,13 @@ import cn.pwc.frame.MyTextFrame;
 import cn.pwc.util.FileCheckUtil;
 import cn.pwc.util.TXTOpenMethod;
 
+/**
+ * 自定义按钮点击事件监听器
+ * 监听打开文件按钮
+ * @author luoyefengqiao
+ *
+ */
+
 public class MyOpenFileListener implements ActionListener{
 
 	private JComponent component;

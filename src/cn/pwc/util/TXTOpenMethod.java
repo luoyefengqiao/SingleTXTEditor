@@ -8,6 +8,13 @@ import java.io.InputStreamReader;
 
 import javax.swing.JTextPane;
 
+/**
+ * TXT文件输入流方法类
+ * 继承Runnable接口允许后台线程执行方法
+ * @author luoyefengqiao
+ *
+ */
+
 public class TXTOpenMethod implements Runnable{
 	private JTextPane textPane;
 	private File file;

@@ -15,6 +15,13 @@ import cn.pwc.frame.MyTextFrame;
 import cn.pwc.util.FileCheckUtil;
 import cn.pwc.util.TXTSaveMethod;
 
+/**
+ * 自定义按钮点击事件监听器
+ * 监听保存文件按钮事件
+ * @author luoyefengqiao
+ *
+ */
+
 public class MySaveFileListener implements ActionListener{
 
 	private JComponent component;
@@ -44,6 +51,7 @@ public class MySaveFileListener implements ActionListener{
 		file=FileCheckUtil.CheckSaveFile(file);
 		
 		if (file!=null&&!file.exists()) {
+			//后台线程执行方法，防止界面卡死
 			new Thread(new TXTSaveMethod(file, myTextFrames.get(tabbedPane.getSelectedIndex()).getTextPane())).start();
 		}
 		if(file!=null&&file.exists()){
