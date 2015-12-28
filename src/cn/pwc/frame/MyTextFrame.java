@@ -4,7 +4,7 @@ import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
 
 /**
- * ×Ô¶¨ÒåFrame¼Ì³ĞJScrollPane£¨¹ö¶¯ÌõPane£©
+ * è‡ªå®šä¹‰Frameç»§æ‰¿JScrollPaneï¼ˆæ»šåŠ¨æ¡Paneï¼‰
  * @author luoyefengqiao
  *
  */

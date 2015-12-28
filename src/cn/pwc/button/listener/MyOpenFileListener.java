@@ -15,8 +15,8 @@ import cn.pwc.util.FileCheckUtil;
 import cn.pwc.util.TXTOpenMethod;
 
 /**
- * 自定义按钮点击事件监听器
- * 监听打开文件按钮
+ * 鑷畾涔夋寜閽偣鍑讳簨浠剁洃鍚櫒
+ * 鐩戝惉鎵撳紑鏂囦欢鎸夐挳
  * @author luoyefengqiao
  *
  */
@@ -35,7 +35,7 @@ public class MyOpenFileListener implements ActionListener{
 		fileChooser_open=new JFileChooser();
 		fileChooser_open.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 		fileChooser_open.setAcceptAllFileFilterUsed(false);
-		fileChooser_open.setFileFilter(new FileNameExtensionFilter("文本文件(.txt)", "txt"));
+		fileChooser_open.setFileFilter(new FileNameExtensionFilter("鏂囨湰鏂囦欢(.txt)", "txt"));
 	}
 	
 	@Override

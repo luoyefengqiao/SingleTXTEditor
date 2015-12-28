@@ -3,7 +3,7 @@ package cn.pwc.util;
 import java.io.File;
 
 /**
- * ÎÄ¼şÃûĞ£Ñé·½·¨
+ * æ–‡ä»¶åæ ¡éªŒæ–¹æ³•
  * @author luoyefengqiao
  *
  */
@@ -11,7 +11,7 @@ import java.io.File;
 public class FileCheckUtil {
 	
 	/*
-	 * ´ò¿ªµÄÎÄ¼şºó×ºĞ£Ñé
+	 * æ‰“å¼€çš„æ–‡ä»¶åç¼€æ ¡éªŒ
 	 */
 	public static File CheckOpenFile(File file){
 		String checkString;
@@ -30,7 +30,7 @@ public class FileCheckUtil {
 	}
 	
 	/*
-	 * ±£´æµÄÎÄ¼şºó×ºĞ£Ñé£¬×Ô¶¯¼ÓÉÏ.txt
+	 * ä¿å­˜çš„æ–‡ä»¶åç¼€æ ¡éªŒï¼Œè‡ªåŠ¨åŠ ä¸Š.txt
 	 */
 	public static File CheckSaveFile(File file){
 		String checkString;

@@ -1,6 +1,5 @@
 package cn.pwc.frame;
 
-import java.awt.MenuItem;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -12,8 +11,6 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
-import javax.swing.event.MenuEvent;
-import javax.swing.event.MenuListener;
 
 import cn.pwc.button.listener.MyOpenFileListener;
 import cn.pwc.button.listener.MySaveFileListener;
@@ -34,7 +31,7 @@ public class StartFrame extends JFrame {
 	 * Create the frame.
 	 */
 	public StartFrame() {
-		setTitle("¼òÒ×¼ÇÊÂ±¾");
+		setTitle("ç®€æ˜“è®°äº‹æœ¬");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(400, 150, 600, 400);
 		
@@ -48,7 +45,7 @@ public class StartFrame extends JFrame {
 				
 				myTextFrames.remove(tabIndex);
 				
-				//ÅĞ¶Ï¼¯ºÏ³¤¶È£¬Èô¼¯ºÏÎª¿Õ£¬Ôò±£´æ°´Å¥Ê§Ğ§
+				//åˆ¤æ–­é›†åˆé•¿åº¦ï¼Œè‹¥é›†åˆä¸ºç©ºï¼Œåˆ™ä¿å­˜æŒ‰é’®å¤±æ•ˆ
 				if (myTextFrames.size()<=0) {
 					menuItem_save.setEnabled(false);
 				}
@@ -63,7 +60,7 @@ public class StartFrame extends JFrame {
 		
 		MyTextFrame myTextFrame=new MyTextFrame();
 		myTextFrames.add(myTextFrame);
-		textOpenTabList.addTab("ĞÂÎÄ±¾", myTextFrame);
+		textOpenTabList.addTab("æ–°æ–‡æœ¬", myTextFrame);
 		getContentPane().add(textOpenTabList);
 		
 		/**
@@ -81,9 +78,9 @@ public class StartFrame extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				MyTextFrame myTextFrame=new MyTextFrame();
 				myTextFrames.add(myTextFrame);
-				textOpenTabList.addTab("ĞÂÎÄ±¾", myTextFrame);
+				textOpenTabList.addTab("æ–°æ–‡æœ¬", myTextFrame);
 				
-				//ÅĞ¶Ï¼¯ºÏ³¤¶È£¬Èô¼¯ºÏ²»Îª¿Õ£¬Ôò±£´æ°´Å¥»Ö¸´¹¦ÄÜ
+				//åˆ¤æ–­é›†åˆé•¿åº¦ï¼Œè‹¥é›†åˆä¸ä¸ºç©ºï¼Œåˆ™ä¿å­˜æŒ‰é’®æ¢å¤åŠŸèƒ½
 				if (myTextFrames.size()>0) {
 					menuItem_save.setEnabled(true);
 				}
@@ -106,7 +103,7 @@ public class StartFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(menuItem_about, "POWERED BY ÂäÒ¶·ãÇÅ");
+				JOptionPane.showMessageDialog(menuItem_about, "å½“å‰ç‰ˆæœ¬ï¼š0.0.1\nPOWERED BY è½å¶æ«æ¡¥");
 			}
 		});
 		menu_help.add(menuItem_about);

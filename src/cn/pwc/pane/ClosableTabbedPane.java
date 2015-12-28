@@ -13,7 +13,7 @@ import java.awt.event.MouseMotionListener;
 import javax.swing.*;
 
 /**
- * 自定义TabbedPane控件
+ * 鑷畾涔塗abbedPane鎺т欢
  * @author luoyefengqiao
  *
  */
@@ -151,7 +151,7 @@ public class ClosableTabbedPane extends JTabbedPane{
 
 	public boolean tabAboutToClose(int tabIndex) {
 		
-		//Tab关闭前调用函数，可重写逻辑
+		//Tab鍏抽棴鍓嶈皟鐢ㄥ嚱鏁帮紝鍙噸鍐欓�昏緫
 		
 		return true;
 	}

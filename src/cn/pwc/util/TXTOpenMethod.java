@@ -9,8 +9,8 @@ import java.io.InputStreamReader;
 import javax.swing.JTextPane;
 
 /**
- * TXT文件输入流方法类
- * 继承Runnable接口允许后台线程执行方法
+ * TXT鏂囦欢杈撳叆娴佹柟娉曠被
+ * 缁ф壙Runnable鎺ュ彛鍏佽鍚庡彴绾跨▼鎵ц鏂规硶
  * @author luoyefengqiao
  *
  */

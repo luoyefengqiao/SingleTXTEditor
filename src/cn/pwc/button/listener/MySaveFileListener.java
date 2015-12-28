@@ -16,8 +16,8 @@ import cn.pwc.util.FileCheckUtil;
 import cn.pwc.util.TXTSaveMethod;
 
 /**
- * ×Ô¶¨Òå°´Å¥µã»÷ÊÂ¼ş¼àÌıÆ÷
- * ¼àÌı±£´æÎÄ¼ş°´Å¥ÊÂ¼ş
+ * è‡ªå®šä¹‰æŒ‰é’®ç‚¹å‡»äº‹ä»¶ç›‘å¬å™¨
+ * ç›‘å¬ä¿å­˜æ–‡ä»¶æŒ‰é’®äº‹ä»¶
  * @author luoyefengqiao
  *
  */
@@ -37,7 +37,7 @@ public class MySaveFileListener implements ActionListener{
 		fileChooser_save=new JFileChooser();
 		fileChooser_save.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES);
 		fileChooser_save.setAcceptAllFileFilterUsed(false);
-		fileChooser_save.setFileFilter(new FileNameExtensionFilter("ÎÄ±¾ÎÄ¼ş(.txt)", "txt"));
+		fileChooser_save.setFileFilter(new FileNameExtensionFilter("æ–‡æœ¬æ–‡ä»¶(.txt)", "txt"));
 	}
 	
 	@Override
@@ -51,11 +51,11 @@ public class MySaveFileListener implements ActionListener{
 		file=FileCheckUtil.CheckSaveFile(file);
 		
 		if (file!=null&&!file.exists()) {
-			//ºóÌ¨Ïß³ÌÖ´ĞĞ·½·¨£¬·ÀÖ¹½çÃæ¿¨ËÀ
+			//åå°çº¿ç¨‹æ‰§è¡Œæ–¹æ³•ï¼Œé˜²æ­¢ç•Œé¢å¡æ­»
 			new Thread(new TXTSaveMethod(file, myTextFrames.get(tabbedPane.getSelectedIndex()).getTextPane())).start();
 		}
 		if(file!=null&&file.exists()){
-			JOptionPane.showMessageDialog(component, "±£´æÊ§°Ü£¡ÎÄ¼şÒÑ´æÔÚ£¡");
+			JOptionPane.showMessageDialog(component, "ä¿å­˜å¤±è´¥ï¼æ–‡ä»¶å·²å­˜åœ¨ï¼");
 		}
 		
 	}
