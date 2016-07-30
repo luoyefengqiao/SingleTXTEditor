@@ -1,4 +1,4 @@
-package cn.pwc.frame;
+package me.pwcong.frame;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,9 +12,9 @@ import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.JTabbedPane;
 
-import cn.pwc.button.listener.MyOpenFileListener;
-import cn.pwc.button.listener.MySaveFileListener;
-import cn.pwc.pane.ClosableTabbedPane;
+import me.pwcong.button.listener.MyOpenFileListener;
+import me.pwcong.button.listener.MySaveFileListener;
+import me.pwcong.pane.ClosableTabbedPane;
 
 public class StartFrame extends JFrame {
 
@@ -103,7 +103,7 @@ public class StartFrame extends JFrame {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(menuItem_about, "当前版本：0.0.1\nPOWERED BY 落叶枫桥");
+				JOptionPane.showMessageDialog(menuItem_about, "当前版本：1.0.0\nPOWERED BY Pwcong");
 			}
 		});
 		menu_help.add(menuItem_about);

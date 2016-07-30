@@ -1,8 +1,8 @@
-package cn.pwc.enter;
+package me.pwcong.enter;
 
 import java.awt.EventQueue;
 
-import cn.pwc.frame.StartFrame;
+import me.pwcong.frame.StartFrame;
 
 public class Start {
 

@@ -1,4 +1,4 @@
-package cn.pwc.pane;
+package me.pwcong.pane;
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Component;

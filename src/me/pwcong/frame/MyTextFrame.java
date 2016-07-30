@@ -1,4 +1,4 @@
-package cn.pwc.frame;
+package me.pwcong.frame;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;

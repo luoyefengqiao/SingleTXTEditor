@@ -1,4 +1,4 @@
-package cn.pwc.util;
+package me.pwcong.util;
 
 import java.io.BufferedWriter;
 import java.io.File;
